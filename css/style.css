@@ -1,3 +1,22 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.site-header{
+
+}
+
+
+.card{
+
+}
+
+.skip-link{
+
+}
+
 @media (min-width: 40em) {
   /* TODO */
 }
