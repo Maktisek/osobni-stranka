@@ -1,52 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --link-color: #676161;
+    --link-color-hover: #0b0808;
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-.site-header{
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--link-color);
+}
+
+a:hover, a:focus{
+    color: var(--link-color-hover);
+    transform: scale(1.05);
+}
+
+.site-header {
 
 }
 
 
-.card{
+.card {
 
 }
 
-.skip-link{
+.skip-link {
 
 }
 
 @media (min-width: 40em) {
-  /* TODO */
+    /* TODO */
 }
 
 @media (min-width: 60em) {
-  /* TODO */
+    /* TODO */
 }
 
 @media (min-width: 80em) {
-  /* TODO */
+    /* TODO */
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    /* TODO */
-  }
+    :root {
+        /* TODO */
+    }
 }
 
 @media (prefers-contrast: more) {
-  /* TODO */
+    /* TODO */
 }
 
 @media (prefers-reduced-motion: reduce) {
-  /* TODO */
+    /* TODO */
 }
 
 @media (prefers-reduced-transparency: reduce) {
-  /* TODO */
+    /* TODO */
 }
 
 @media (forced-colors: active) {
-  /* TODO */
+    /* TODO */
 }
