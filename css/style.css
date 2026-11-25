@@ -1,20 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-    --body-color: #f7f7f7;
+    --body-color: #e8e8e8;
+    /*--body-color: #f7f7f7;*/
     --link-color: #000000;
-    --link-color-hover: var(--border-color);
+    --link-color-hover: rgba(255, 255, 255, 0.67);
     --quote-color: #605d5d;
     --border-color: rgb(46, 54, 66);
     --card-background: rgba(74, 85, 104, 0.2);
+    --thead-background: rgba(74, 85, 104, 0.2);
     --header-background: rgba(74, 85, 104, 0.57);
     --shadow: rgba(83, 83, 83, 0.23);
+    --text-color: black;
+    --small-text-color: #4a4a4a;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -24,6 +32,17 @@ body {
     background-color: var(--body-color);
     font-size: 0.9rem;
     padding: 0 10px 0 10px;
+    color: var(--text-color);
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+
+    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.84);
 }
 
 #obsah{
@@ -48,7 +67,7 @@ nav ul{
 a {
     display: inline-block;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     color: var(--link-color);
 }
 
@@ -117,9 +136,6 @@ q::before, q::after{
     gap: 15px;
 }
 
-.projekty .card{
-
-}
 
 .skip-link {
     margin: 14px 0 8px 0;
@@ -127,11 +143,54 @@ q::before, q::after{
 
 footer{
     padding: 10px;
-    /*border: 3px solid var(--border-color);*/
-    border-radius: 4px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
     background-color: var(--card-background);
     margin: 5px 0 5px 0;
 }
+
+.site-footer{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.dovednostiCard{
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+small a{
+    color: var(--small-text-color);
+    font-size: 0.7rem;
+}
+
+small a:hover{
+    color: var(--text-color);
+}
+
+.dovednosti{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.dovednosti caption{
+    margin-bottom: 10px;
+}
+
+.dovednosti td, .dovednosti th{
+    padding: 5px;
+    text-align: left;
+    border: 2px solid var(--border-color);
+    background: var(--card-background)
+}
+
+.dovednosti thead {
+    background: var(--thead-background)
+}
+
 
 @media (min-width: 40em) {
     /* TODO */

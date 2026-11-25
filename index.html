@@ -11,7 +11,7 @@
 <body>
 <a class="skip-link" href="#obsah">Přejít na obsah</a>
 
-<header class="site-header">
+<header class="site-header" id="start">
     <h1>Matěj Pospíšil</h1>
     <q>Stačí vědět a být kreativní</q>
     <nav aria-label="Hlavní navigace">
@@ -118,10 +118,10 @@
         </article>
     </section>
 
-    <section id="dovednosti" aria-labelledby="dovednosti-nadpis">
+    <section id="dovednosti" aria-labelledby="dovednosti-nadpis" class="dovednostiCard">
         <h2 id="dovednosti-nadpis">Dovednosti</h2>
-        <table>
-            <caption>Mé dovednosti</caption>
+        <table class="dovednosti">
+            <caption>Přehled mých kompetencí</caption>
             <thead>
             <tr>
                 <th scope="col">Dovednost</th>
@@ -160,8 +160,9 @@
 
 </main>
 
-<footer>
+<footer class="site-footer">
     <p>© 2026 Matěj Pospíšil</p>
+    <small><a href="#start">Zpět na začátek</a></small>
 </footer>
 </body>
 </html>
