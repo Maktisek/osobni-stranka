@@ -52,7 +52,7 @@ body::after {
 
 p {
     line-height: 1.3;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 nav ul{
@@ -70,7 +70,7 @@ a {
     color: var(--link-color);
 }
 
-a:hover, a:focus{
+a:hover, a:focus-visible{
     color: var(--link-color-hover);
     transform: scale(1.01);
 }
@@ -171,7 +171,7 @@ small a:hover{
 .dovednosti{
     width: 80%;
     border-collapse: collapse;
-    margin: 0 auto;
+    margin: 0.8rem auto;
 }
 
 .dovednosti caption{
@@ -187,6 +187,22 @@ small a:hover{
 
 .dovednosti thead {
     background: var(--thead-background)
+}
+
+.img-mid{
+    max-width: 20%;
+}
+
+.img-big{
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+figure img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
 }
 
 
