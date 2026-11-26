@@ -11,7 +11,7 @@
 <body>
 <a class="skip-link" href="#obsah">Přejít na obsah</a>
 
-<header class="site-header">
+<header class="site-header" id="start">
     <h1>Matěj Pospíšil</h1>
     <q>Stačí vědět a být kreativní</q>
     <nav aria-label="Hlavní navigace">
@@ -29,21 +29,21 @@
     <section id="o-mne" class="card" aria-labelledby="o-mne-nadpis">
         <h2 id="o-mne-nadpis">O mně</h2>
         <article>
-            <figure>
-                <img alt="Foto - Můj portrét" src="img/portret.webp">
+            <figure class="img-mid">
+                <img alt="Foto - Můj portrét" src="img/ja.webp">
             </figure>
             <section class="popis-karty">
                 <p>
-                    Tohle je jedna věta o mně, kterou časem dopíši, ale teď nedává smysl
-                    ztrácet čas na něčem, co se dá ladit v budoucnu.
+                    Studuji třetí ročník SPŠE Ječná na oboru informační technologie.
                 </p>
                 <p>
-                    Tohle je jedna věta o mně, kterou časem dopíši, ale teď nedává smysl
-                    ztrácet čas na něčem, co se dá ladit v budoucnu.
+                    Baví mě rozvíjet různorodé IT projekty, ve kterých si otestuji své znalosti a možnosti.
                 </p>
                 <p>
-                    Tohle je jedna věta o mně, kterou časem dopíši, ale teď nedává smysl
-                    ztrácet čas na něčem, co se dá ladit v budoucnu.
+                    Rád pracuji v koletivu, společná práce je mou silnou stránkou.
+                </p>
+                <p>
+                    Ve svém volném čase se věnuji hudbě a multimediální tvorbě.
                 </p>
             </section>
         </article>
@@ -52,39 +52,58 @@
     <section id="projekty" aria-labelledby="projekty-nadpis" class="projekty">
         <h2 id="projekty-nadpis">Projekty</h2>
         <article class="card">
-               <h3>Last Memory</h3>
-               <section>
-                   <article class="popis-karty">
-                       <p>
-                           Stručný popis opět dopíši až vše bude připraveno.
-                           Nyní ale nedává moc smysl to sem psát, takže si sem napíši
-                           nějaký random text, na kterým se to bude testovat.
-                       </p>
-                       <p>
-                           Stručný popis opět dopíši až vše bude připraveno.
-                           Nyní ale nedává moc smysl to sem psát, takže si sem napíši
-                           nějaký random text, na kterým se to bude testovat.
-                       </p>
-                   </article>
-                   <figure>
-                       <img alt="Názorná ukázka Last Memory" src="img/portret.webp">
-                       <figcaption>Last Memory - Konzolová hra</figcaption>
-                   </figure>
-               </section>
-        </article>
-
-        <article class="card">
-            <h3>Forest Market Simulator</h3>
+            <h3>Last Memory</h3>
             <section>
                 <article class="popis-karty">
                     <p>
-                        Stručný popis opět dopíši až vše bude připraveno.
-                        Nyní ale nedává moc smysl to sem psát, takže si sem napíši
-                        nějaký random text, na kterým se to bude testovat.
+                        Last memory je textová hra naprogromavaná v Javě v rámci školního
+                        pololetního projektu ve druhém ročníku. Cílem tohoto projektu
+                        bylo prohloubit zkušenosti z programování a znalost programovacího
+                        jazyka Java.
+                    </p>
+                    <p>
+                        Vývoj hry trval cca 70 až 90 hodin. Kód je komplexnější než
+                        by se u školní textové hry čekalo a je silně objektový a flexibilní.
+                    </p>
+                    <p>
+                        Hra má také svůj příběh s gradací a hlavní zápletkou.
+                        Pro mnohé by příběh mohl být i emotivní. Hra obsahuje cutscény,
+                        dialogy, úkoly a také možnost volného pohybu po herní mapě. Nechybí
+                        ani implementovaný zvukový systém, takže hra přehrává hudbu a herní
+                        zvuky.
+                    </p>
+                </article>
+            </section>
+            <figure class="img-big">
+                <img alt="Názorná ukázka Last Memory" src="img/LastMemory.webp">
+                <figcaption>Last Memory - Konzolová hra</figcaption>
+            </figure>
+        </article>
+
+        <article class="card">
+            <h3>Forest Market</h3>
+            <section>
+                <article class="popis-karty">
+                    <p>
+                        Forest Market je zatím mým největším projektem.
+                        Vývoj trval přes 100 hodin a hra implementuje jak
+                        grafické rozhraní tak zvukové rozhraní. Byla vytvořena
+                        v rámci školního zadání a to přímo jako závěrečný projekt
+                        druhého ročníku.
+                    </p>
+                    <p>
+                        Hra je naprogramovaná v čisté Javě za pomocí Java Swing
+                        knihovny, která obstarává grafické rozhraní.
+                    </p>
+                    <p>
+                        90% všech assetů jsem si navrhoval a vytvářel sám.
+                        Záměrně jsem se věnoval pixel art grafice, protože
+                        vím, že tímto směrem v oblasti vývoje her se chci
+                        ubírat.
                     </p>
                 </article>
                 <figure>
-                    <img alt="Názorná ukázka Last Memory" src="img/portret.webp">
+                    <img alt="Názorná ukázka hry Forest Market" src="img/ForestMarket.webp">
                     <figcaption>Forest Market Simulator - Java Swing</figcaption>
                 </figure>
             </section>
@@ -95,33 +114,39 @@
             <section>
                 <article class="popis-karty">
                     <p>
-                        Stručný popis opět dopíši až vše bude připraveno.
-                        Nyní ale nedává moc smysl to sem psát, takže si sem napíši
-                        nějaký random text, na kterým se to bude testovat.
+                        Tento projekt je teprve ve své prototypní
+                        fázi a jedná se o první projekt, který
+                        přesahuje budovu školy. Jeho realizace je totiž
+                        pro mě velmi užitečná. Avšak je potřeba zmínit,
+                        že vzniká v rámci školního projektu.
+                        Jedná se spíše o fyzickou realizaci než o čisté
+                        programování, ale to je právě pro mě tou výzvou.
                     </p>
                     <p>
-                        Stručný popis opět dopíši až vše bude připraveno.
-                        Nyní ale nedává moc smysl to sem psát, takže si sem napíši
-                        nějaký random text, na kterým se to bude testovat.
+                        Cílem tohoto projektu tak bude zařízení, které
+                        budu moct využít i pro svůj prospěch. Radiační
+                        simulátor totiž není žádný simulátor reálné radiace,
+                        ale vysílač a přijímač komunikující skrze ESP-NOW
+                        protokol.
                     </p>
                     <p>
-                        Stručný popis opět dopíši až vše bude připraveno.
-                        Nyní ale nedává moc smysl to sem psát, takže si sem napíši
-                        nějaký random text, na kterým se to bude testovat.
+                        Finální produkt je ale ještě v nedohlednu a bude
+                        třeba tomuto projektu věnovat ještě mnoho času.
+                        Pro mě je to ale skvělou výzvou!
                     </p>
                 </article>
-                <figure>
-                    <img alt="Názorná ukázka Last Memory" src="img/portret.webp">
-                    <figcaption>Radiační simulator - prototyp</figcaption>
-                </figure>
             </section>
+            <figure class="img-big">
+                <img alt="Názorná ukázka kódu přijímače" src="img/Radiace.webp">
+                <figcaption>Radiační simulator - metoda pro přijmutí packetu</figcaption>
+            </figure>
         </article>
     </section>
 
-    <section id="dovednosti" aria-labelledby="dovednosti-nadpis">
+    <section id="dovednosti" aria-labelledby="dovednosti-nadpis" class="dovednostiCard">
         <h2 id="dovednosti-nadpis">Dovednosti</h2>
-        <table>
-            <caption>Mé dovednosti</caption>
+        <table class="dovednosti">
+            <caption>Přehled mých kompetencí</caption>
             <thead>
             <tr>
                 <th scope="col">Dovednost</th>
@@ -131,19 +156,19 @@
             <tbody>
             <tr>
                 <th scope="row">Java</th>
-                <td>Pokročilý</td>
+                <td>Java Oracle Programmer</td>
             </tr>
             <tr>
-                <th scope="row">Java</th>
-                <td>Pokročilý</td>
+                <th scope="row">C#</th>
+                <td>Zkušenost s běžným programováním a UNITY</td>
             </tr>
             <tr>
-                <th scope="row">Java</th>
-                <td>Pokročilý</td>
+                <th scope="row">Linux</th>
+                <td>NDG Linux</td>
             </tr>
             <tr>
-                <th scope="row">Java</th>
-                <td>Pokročilý</td>
+                <th scope="row">Frontend vývoj</th>
+                <td>Zkušenost s navrhováním webových stránek</td>
             </tr>
             </tbody>
         </table>
@@ -153,15 +178,16 @@
         <h2 id="kontakt-nadpis">Kontakt</h2>
         <address>
             <!-- TODO: e-mail jako odkaz (mailto:), případně město nebo odkaz na profil -->
-            <p>E-mail: <a href="mailto:pospisilmatysek@gmail.com">pospisilmatysek@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/Maktisek">Matěj Pospíšil - GitHub</a></p>
+            <p>E-mail: <a href="mailto:pospisilmatysek@gmail.com" target="_blank" rel="noopener noreferrer">pospisilmatysek@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/Maktisek" target="_blank" rel="noopener noreferrer">Matěj Pospíšil - GitHub</a></p>
         </address>
     </section>
 
 </main>
 
-<footer>
+<footer class="site-footer">
     <p>© 2026 Matěj Pospíšil</p>
+    <small><a href="#">Zpět na začátek</a></small>
 </footer>
 </body>
 </html>
